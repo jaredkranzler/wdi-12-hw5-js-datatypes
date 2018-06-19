@@ -243,14 +243,23 @@ const bondFilms = [
 //   console.log(bondFilms[key]);
 // }
 
+// const bondTitles = [];
+// for (i = 0; i < bondFilms.length; i++){
+// bondTitles.push(bondFilms[i].title)
+// }
+// console.log(bondTitles);
 
-const bondTitles = [];
+// --------------------------------------------------------------------
+// Create a new array oddBonds, of only the Bond films released on odd-numbered years.
+
+
+let oddBonds = [];
 for (i = 0; i < bondFilms.length; i++){
-bondTitles.push(bondFilms[i].title)
+  if (bondFilms[i].year % 2 == 1){
+oddBonds.push(bondFilms[i].title)
 }
-console.log(bondTitles);
-
-
+}
+console.log(oddBonds);
 
 
 
